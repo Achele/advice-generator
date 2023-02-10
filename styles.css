@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap");
+
 *,
 ::after *,
 ::before * {
@@ -6,5 +8,85 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background: hsl(218, 23%, 16%);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+.container-wrapper {
+  background: hsl(217, 19%, 24%);
+  margin: 8em auto;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  border-radius: 0.9em;
+  padding: 1em;
+}
+
+h3 {
+  color: hsl(150, 100%, 66%);
+  padding: 0.7em;
+  font-size: 0.9em;
+  letter-spacing: 3px;
+  margin: 9px auto;
+}
+
+blockquote {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.5em;
+  margin: 5px;
+  padding: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.quoteDivider {
+  padding: 1em;
+  background-image: url("images/pattern-divider-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button {
+  border-radius: 50%;
+  background: hsl(150, 100%, 66%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  bottom: -3rem;
+  padding: 1.2em;
+}
+
+button:active,
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+
+@media screen and (min-width: 60rem) {
+  .container-wrapper {
+    max-width: 420px;
+  }
+  .quoteDivider {
+    background-image: url("images/pattern-divider-desktop.svg");
+  }
 }
